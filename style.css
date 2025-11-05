@@ -1,0 +1,95 @@
+/* style.css */
+
+/* 기본 스타일 */
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    line-height: 1.6; 
+    padding: 0; 
+    margin: 0; 
+    background-color: #f4f7f9; 
+    color: #333; 
+}
+.header { 
+    background-color: #34495e; 
+    color: white; 
+    padding: 40px 20px; 
+    text-align: center; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+.header h1 { 
+    font-size: 2.5em; 
+    margin-bottom: 10px; 
+}
+.header p { 
+    font-size: 1.2em; 
+    opacity: 0.8; 
+}
+.container { 
+    max-width: 1100px; 
+    margin: 40px auto; 
+    padding: 0 20px; 
+}
+.plan-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 30px; 
+}
+.plan-card { 
+    background: white; 
+    padding: 30px; 
+    border-radius: 12px; 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    border-top: 5px solid; 
+}
+.plan-card:hover { 
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); 
+}
+.plan-card h2 { 
+    font-size: 1.8em; 
+    margin-bottom: 15px; 
+    font-weight: bold; 
+}
+.plan-card p { 
+    margin-bottom: 20px; 
+    color: #555; 
+}
+.plan-card ul { 
+    list-style: disc; 
+    margin-left: 20px; 
+    margin-bottom: 20px; 
+    color: #555; 
+}
+.plan-link { 
+    display: inline-block; 
+    padding: 10px 20px; 
+    background-color: #2980b9; 
+    color: white; 
+    border-radius: 8px; 
+    text-decoration: none; 
+    font-weight: bold; 
+    transition: background-color 0.3s; 
+}
+.plan-link:hover { 
+    background-color: #3498db; 
+}
+
+/* 색상 테마 */
+.plan-card.growth { border-top-color: #2ecc71; }
+.plan-card.growth .plan-link { background-color: #2ecc71; }
+.plan-card.growth .plan-link:hover { background-color: #27ae60; }
+
+.plan-card.revenue { border-top-color: #f39c12; }
+.plan-card.revenue .plan-link { background-color: #f39c12; }
+.plan-card.revenue .plan-link:hover { background-color: #e67e22; }
+
+.plan-card.viral { border-top-color: #9b59b6; }
+.plan-card.viral .plan-link { background-color: #9b59b6; }
+.plan-card.viral .plan-link:hover { background-color: #8e44ad; }
+
+.filename-note { 
+    font-size: 0.85em; 
+    color: #777; 
+    margin-top: 10px; 
+}
